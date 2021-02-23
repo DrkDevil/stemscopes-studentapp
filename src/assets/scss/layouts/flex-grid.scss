@@ -1,0 +1,21 @@
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-sb {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+@media (max-width: 800px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      margin: 0 0 10px 0;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.subnav {
+  display: flex;
+  ul {
+    min-width: 1380px;
+    margin: auto;
+  }
+  .btn {
+      font-size: 12px;
+      background-color: #106A9F !important;
+      border: 1px solid #ffffff78;
+      letter-spacing: 0.05rem;
+      padding: 7px 15px;
+      border-radius: 20px;
+      color: $white;
+      margin-right: 15px;
+      .fal {
+        margin-left: 10px;
+      }
+  }
+}
+
+

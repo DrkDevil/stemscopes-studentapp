@@ -1,0 +1,75 @@
+.navContainer {
+  background-color: white;
+}
+.navbar {
+    line-height: 1.55rem;
+    .col.links {
+      width: 100%;
+     
+    li {
+        padding: 0.5rem 2.5rem 0.5rem 0; 
+    }
+    }
+    .col.actions {
+      width: 20%;
+    }
+    text-align: center;
+    z-index: 10000;
+    max-width: 1440px;
+    margin: auto;
+    padding: 15px 30px;
+    background-color: white;  
+    .brand {
+      padding: 0 30px 0 0  ;
+    }
+    img {
+      width: 175px;
+    }
+    ul {
+      width: 100%;  
+      display: inline-block;
+      margin-bottom: 0;
+        @include mq('tablet') {
+          display: inline-block; 
+          float: left;
+        }
+    }
+    
+    ul:nth-child(3) {
+      li {
+        @include mq('tablet') {
+          display: inline-block; 
+          float: right;
+        }
+      }     
+    }
+    li {
+      margin-bottom: 0;
+      padding: 0.5rem .75rem;
+      float: left;
+      @include mq('tablet') {
+          padding: 0.5rem .75rem;
+        }
+    }
+    a {
+      color: #666;
+        text-decoration: none;
+        font-size: 14px;
+        &:hover {
+        text-decoration: none;
+            color: #4887B9;
+        }
+        @include mq('tablet') {
+          font-size:14px;
+      }
+        @include mq('md') {
+          font-size: 14px;
+        }
+    }
+    .active {
+      a {
+        color: #4887B9;
+        font-weight: 500;
+      }
+    }
+  }
